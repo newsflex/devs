@@ -1,12 +1,8 @@
 # NPR IT Devs Typescript Style Guide
 
-
-<a name="table-of-contents"></a>
-
-# TypeScript Style Guide
-
 This is the TypeScript style guide that we aim to use for NPR IT DevTeam codebases.
 
+<a name="table-of-contents"></a>
 ## Table of Contents
 
   1. [Formatting](#Formatting)
@@ -49,11 +45,8 @@ This is the TypeScript style guide that we aim to use for NPR IT DevTeam codebas
   - All TypeScript files must have a ".ts" or ".tsx" extension.
   - It is OK to separate words with periods or dashes (e.g. `my.view.html`).
   - Angular usually should end the respective class type ie `.component` or `.service` and so on
-  - **All files should end in a new line.** This is necessary for some Unix systems.
-
 
 **[top](#table-of-contents)**
-
 
 ## Quotes
   - Use single-quotes `''` for all strings, and use double-quotes `""` for strings within strings.
@@ -138,10 +131,8 @@ JSDocs can be interpreted by IDEs for better intellisense. Below is an example o
 
 ### Comments: Todo and Code Review
 
-`TODO` and `code-review` annotations help you quickly find things that need to be fixed/implemented.
-
-  - Use `// TODO:` or `// todo` to annotate solutions that need to be implemented.
-  - Use `// code-review:` to annotate problems the need to be fixed or questions for code review meetings.
+  - Use `// TODO:` to annotate code that needs to be implemented or fixed
+  - Use `// code-review:` to annotate code for discusion in code review meetings
 
 **[top](#table-of-contents)**
 
@@ -149,7 +140,7 @@ JSDocs can be interpreted by IDEs for better intellisense. Below is an example o
 
   - All variables must be declared prior to using them. 
   - Use `const` for vars that will never change
-  - Use `let` or `const`
+  - Use `let` otherwise
   - You should not use `var`
   - Avoid global variables
 
@@ -163,6 +154,19 @@ JSDocs can be interpreted by IDEs for better intellisense. Below is an example o
   // good
   function foo(): string {
       return 'foo';
+  }
+  ```
+
+  - Avoid passing in long lists of parameters into a function. 
+  - For more than 2 params (or 2 params with the same type) consider passing as an object to avoid mistakes in parameter passing
+
+  ```typescript
+  // bad
+  function display(first: string, middle: string, last: string) {
+  }
+
+  // good
+  function display(person: { first: string, middle: string, last: string}) { 
   }
   ```
 
