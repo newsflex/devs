@@ -1,11 +1,11 @@
-# NPR IT Devs Typescript Style Guide() {
+# NPR IT Devs Typescript Style Guide
 
 
 <a name="table-of-contents"></a>
 
 # TypeScript Style Guide
 
-This is the TypeScript style guide that we aim to use for NPR codebases.
+This is the TypeScript style guide that we aim to use for NPR IT DevTeam codebases.
 
 ## Table of Contents
 
@@ -113,6 +113,7 @@ This is the TypeScript style guide that we aim to use for NPR codebases.
 **[top](#table-of-contents)**
 
 ## Comments
+
   - Comments are strongly encouraged. It is very useful to be able to read comments and understand the intentions of a given block of code.
   - Try to include meaningful and comments that show your intention. 
   - If the code is tricky explain why and how it works
