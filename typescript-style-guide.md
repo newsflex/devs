@@ -44,6 +44,7 @@ This is the TypeScript style guide that we aim to use for NPR IT DevTeam codebas
 ## Files
   - All TypeScript files must have a ".ts" or ".tsx" extension.
   - It is OK to separate words with periods or dashes (e.g. `my.view.html`).
+  - File names should contain no capital letters.
   - Angular usually should end the respective class type ie `.component` or `.service` and so on
 
 **[top](#table-of-contents)**
